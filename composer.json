@@ -1,0 +1,35 @@
+{
+  "name": "dimsav/laravel-ip-service",
+  "description": "A Laravel package to get the client's country using the ip. A wrapper for http://ip2nation.com",
+  "keywords": ["laravel", "ip", "country", "nation"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dimitris Savvopoulos",
+      "email": "ds@dimsav.com",
+      "homepage": "http://dimsav.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "~4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~2.0",
+    "phpunit/phpunit": "~4.0",
+    "mockery/mockery": "~0.9"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Dimsav\\IpService\\": "src/"
+    },
+    "classmap": [
+      "tests"
+    ]
+  }
+}
