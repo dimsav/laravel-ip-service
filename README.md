@@ -13,6 +13,11 @@ Tries to guess the country code of the client, using his IP.
 ```php
 $service = App::make('Dimsav\IpService\IpService');
 
-echo $service->getCountryCodeFromIp('123.123.123.123'); // country code for give ip address
-echo $service->getCountryCodeFromClientIp(); // country code of client's ip address
+// country code for the given ip address
+
+echo $service->getCountryCodeFromIp('123.123.123.123');  // de
+
+// country code for the client's ip address
+
+echo $service->getCountryCodeFromClientIp(); 
 ```
