@@ -6,6 +6,13 @@ Tries to guess the country code of the client, using his IP.
 ## Installation
 
 
-1. [Download](http://ip2nation.com/ip2nation/Download) and import the ip database from [ip2nation.com](http://ip2nation.com/)
+[Download](http://ip2nation.com/ip2nation/Download) and import the ip database from [ip2nation.com](http://ip2nation.com/)
 
-2. Call `IpService::getCountryCodeFromClientIp()` to get the iso code.
+## Usage
+
+```php
+$service = App::make('Dimsav\IpService\IpService');
+
+echo $service->getCountryCodeFromIp('123.123.123.123'); // country code for give ip address
+echo $service->getCountryCodeFromClientIp(); // country code of client's ip address
+```
